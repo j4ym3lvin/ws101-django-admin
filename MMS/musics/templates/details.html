@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+Details about {{ my_musics.music_name }} {{ my_musics.music_artist }}
+{% endblock %}
+
+
+{% block content %}
+<h1>{{ my_musics.music_name }} {{ my_musics.music_artist }}</h1>
+<p>Music ID: {{ my_musics.music_id }}</p>
+<p>Music Genre: {{ my_musics.music_genre }}</p>
+
+<p>Back to <a href="/student">Musics List</a></p>
+
+{% endblock %}
+

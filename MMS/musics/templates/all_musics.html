@@ -1,0 +1,22 @@
+{% extends "master.html" %}
+
+{% block title %}
+Music Library
+{% endblock %}
+
+
+{% block content %}
+
+<p><a href="/">GO TO HOME</a></p>
+
+<h1>Music Library:</h1>
+
+
+
+<ul>
+    {% for x in my_musics %}
+    <li> <a href="details/{{x.id}}">{{ x.music_name }} by {{ x.music_artist }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
